@@ -52,6 +52,7 @@ void sendToDb(){
   sensor.addField("mowState", mowState);
   sensor.addField("mowStateDesired", mowStateDesired);
   sensor.addField("millis", millis());
+  sensor.addField("manMowOn", manMowOn);
   
   // Print what are we exactly writing
   //debugV("%s", client_v1.pointToLineProtocol(sensor).c_str());

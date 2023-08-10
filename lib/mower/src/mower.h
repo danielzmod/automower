@@ -89,7 +89,7 @@ void printState(){
   debugD("reason: %u, exccause: %u", rst_dump->reason, rst_dump->exccause);
   debugI("mowMode: %u, State: %u, mowStateDesired: %u, RSSI: %i", mowMode, mowState, mowStateDesired, WiFi.RSSI());
   debugI("mowClock: %d:%d:%d", mowClock.hour, mowClock.minute, mowClock.seconds);
-  debugI("mowStatus: %i,", MOWER_STATUS);
+  debugI("mowStatus: %i, manMowOn: %u", MOWER_STATUS, manMowOn);
 }
 
 int sendMowReq(const uint8_t *request, uint8_t len){
